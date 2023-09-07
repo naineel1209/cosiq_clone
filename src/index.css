@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.nav-btn{
+    padding: .7rem;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+
+a.nav-btn:hover{
+    background-color: #fff;
+    color: #000;
+    padding: .7rem;
+    transition: all 200ms ;
+}
+
+.get-started{
+  transition: all 200ms ease-in-out;
+}
+
+.get-started:hover{
+  background-color: #000;
+  color: #fff;
+  transition: all 200ms ease-in-out;
+}
+
+.hero_section{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 1rem;
+  margin-block: 1.5rem;
+}
+
+.shero_section{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-block: 1.5rem;
+}
+
+
+.hero_section iframe{
+  width: 100%;
+}
