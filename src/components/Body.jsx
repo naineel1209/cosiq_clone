@@ -176,6 +176,10 @@ function InformationSubSection() {
             <div className='flex justify-center items-center w-[100%]'>
               <button className='text-center p-2 px-3 w-[80%] border-2 border-blue-800 bg-blue-800 text-white'>&#x20b9;{item.amount}</button>
             </div>
+
+            <div className="flex justify-center items-center w-[100%] mt-5 gap-3">
+              <span className="font-bold">CSOP</span> <span>{item.availability}</span>
+            </div>
           </div>);
         })
       }
@@ -279,8 +283,10 @@ function HeroSection({ }) {
 
   const [investors, setInvestors] = useState('5')
 
-  return <div className='hero_section'>
-    <iframe width="640" height="390" src="https://www.youtube.com/embed/kFII05-bhGU" title="CosIQ for Pepcorns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className='w-100'></iframe>
+  return <div className='hero_section border-2 border-r-0'>
+    <iframe width="640" height="390" src="https://www.youtube.com/embed/kFII05-bhGU" title="CosIQ for Pepcorns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className='w-100'>
+      <span className='mb-2'>Unable to view the video? <a href='https://www.youtube.com/embed/kFII05-bhGU' className='text-blue-700'>Click here</a></span> <br />
+    </iframe>
 
     <div className='m-auto w-[70%]'>
       <div className='mb-3 border-b-2 border-gray-400 pb-2'>
@@ -298,7 +304,7 @@ function HeroSection({ }) {
       {/* <div className='flex flex-row items-center justify-start'>
       </div> */}
     </div>
-    <span className='mb-2'>Unable to view the video? <a href='https://www.youtube.com/embed/kFII05-bhGU' className='text-blue-700'>Click here</a></span> <br />
+
   </div>
 }
 
